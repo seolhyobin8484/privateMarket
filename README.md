@@ -494,4 +494,8 @@ def update_user(new_id,new_pwd,new_loc,new_mail,new_phone,new_cellphone,new_sex)
     close_db()
 ```
 
+## 개발 환경
 
+- Language : python 3.10.6
+- Tool : Pycharm
+- DB : Mysql
