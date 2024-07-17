@@ -1,18 +1,21 @@
 # 효빈마켓
 교육 과제로 한 개인마켓프로그램  
 
+
 ## 메인화면
 ![image](https://github.com/user-attachments/assets/8e790771-b7f1-46cf-a241-92656c9fb12d) 
 
 
-### 회원가입 버튼을 눌렀을 경우. 처리되는 화면. (아이디, 비밀번호는 필수입력)<hr>
+##### 회원가입 버튼을 눌렀을 경우. 처리되는 화면. (아이디, 비밀번호는 필수입력)
 ![image](https://github.com/user-attachments/assets/334d5d2a-f1d3-4432-a587-3fbc51bba42d)
 ![image](https://github.com/user-attachments/assets/36caca92-66a7-4232-950c-d727611613c5)
 ![image](https://github.com/user-attachments/assets/4ec3e1f4-f6b7-40c1-8bd3-76049eacad4b)
 
-### 로그인 (비밀번호 틀렸을 경우 포함)<hr>
+
+##### 로그인 (비밀번호 틀렸을 경우 포함)
 ![image](https://github.com/user-attachments/assets/fa8ddc71-5f07-4dd6-a60d-a99871548307)
 ![image](https://github.com/user-attachments/assets/12747515-572c-4dd3-b664-2858e9f9657f)
+
 
 ## 사용자
 
@@ -23,25 +26,34 @@
 ###### 구매 : 구매할 상품명을 Listbox에서 선택하고 수량을 정하여 버튼을 누르는 방식
 ![image](https://github.com/user-attachments/assets/93694a23-9977-4f38-a53e-8d17e0e64eb8)
 
+
 ###### 물품 구매
 ![image](https://github.com/user-attachments/assets/d8822677-a43e-4bf8-9faa-728f4a081ca8)
+
 
 ###### 회원정보수정 : 각 정보 중에서 바꾸고싶은 값만 바꾸는 방식 (바꾸지 않으면 해당 값은 기존 값 유지)
 ![image](https://github.com/user-attachments/assets/ebb594d7-1446-42d7-a22c-8e94262202aa)
 
+
 ###### 회원정보 변경
 ![image](https://github.com/user-attachments/assets/0c0c2267-e0f1-4344-b2c8-981336230ff6)
 
+
 ## 관리자
 
-### 관리자계정을 만들기 위해 회원가입을 시도하여 그 중, 관리자 비밀번호를 입력
-#### (설정된 관리자 비번 : tjfgyqls)<hr>
+##### 관리자계정을 만들기 위해 회원가입을 시도하여 그 중, 관리자 비밀번호를 입력
+##### (설정된 관리자 비번 : tjfgyqls)<hr>
 ![image](https://github.com/user-attachments/assets/7fb4bb21-008e-459e-b0ab-98bb781b6792)
+
 
 ##### 방금 만든 관리자계정으로 로그인
 ![image](https://github.com/user-attachments/assets/e9df4002-65a1-478e-a92f-5e0e53ce2ab3)
 
+
 ### 관리자 페이지로 로그인시 보여지는 관리자 페이지<hr>
+![image](https://github.com/user-attachments/assets/a4e9c34c-aaaf-48eb-a001-52af9011e8a0)
+
+
 ###### 관리자는 마켓에 상품을 추가할 수 있다. Entry의 값을 버튼으로 날려보내서 처리하는 과정.
 ![image](https://github.com/user-attachments/assets/b28432f0-1494-4e8d-ae13-964ed4b938dd)
 
@@ -209,6 +221,7 @@ def reset_user(user_var): #버튼을 눌렀을때 기존에 생성된 창을 지
         user_cellphone_L.pack(),user_cellphone_E.pack()
         user_sex_L.pack(),user_sex_E.pack()
         update_Btn.pack()
+
 def user_menu(): #사용자 창
     global user_screen, var_user, buying_RdBtn, update_userinfo_RdBtn, item_name_list, user_var, buy_Btn, item_ea_E, item_ea_L
     user_screen = Toplevel()
@@ -253,6 +266,7 @@ def user_menu(): #사용자 창
 
     buying_RdBtn.pack()
     update_userinfo_RdBtn.pack()
+
 def join_checking(): #회원가입시 필수 입력해야하는 값 (DB에서 id,pass는 NN으로 설정되어있다.)
     if id_E.get() == "" or pwd_E.get() =="":
         messagebox.showinfo("오류","*은 필수 입력란입니다.")
@@ -324,6 +338,7 @@ def connect_db(): #pymysql 사용해서 DB연결
 def close_db(): #DB 종료
     connect.commit()
     connect.close()
+
 def insert_item(item_name, sell_price, buy_price): #상품 추가
     connect_db()
     sql = f'INSERT INTO 상품 (상품명,판매가,구매가) VALUES ("{item_name}","{sell_price}","{buy_price}");'
@@ -390,6 +405,7 @@ def join_membership(id,pwd,loc,mail,phone,cellphone,sex,admin): #회원가입
     cursor.execute(sql,info)
     close_db()
     messagebox.showinfo("안내","회원가입이 완료되었습니다.")
+
 def item_name_list(): #프로그램상 상품번호로 처리하지만, 사용자에겐
     connect_db()
     sql = 'SELECT 상품명 FROM 상품;'
@@ -400,6 +416,7 @@ def item_name_list(): #프로그램상 상품번호로 처리하지만, 사용�
         name_list.append(res[i])
     close_db()
     return name_list
+
 def buying(item_num,item_ea): #사용자가 구매하는 것과 동시에 판매이력에 남김. (판매 및 판매상세는 관리자만 확인 가능)
         connect_db()
         selectName_sql = f'SELECT 상품명 FROM 상품 WHERE 상품번호 = "{item_num}";'
