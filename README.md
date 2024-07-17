@@ -1,72 +1,84 @@
 # 효빈마켓
-교육 과제로 한 개인마켓프로그램  
 
+교육 과제로 한 개인마켓프로그램  
+<br>
 
 ## 메인화면
+
 ![image](https://github.com/user-attachments/assets/8e790771-b7f1-46cf-a241-92656c9fb12d) 
 
 
 ##### 회원가입 버튼을 눌렀을 경우. 처리되는 화면. (아이디, 비밀번호는 필수입력)
+
 ![image](https://github.com/user-attachments/assets/334d5d2a-f1d3-4432-a587-3fbc51bba42d)
 ![image](https://github.com/user-attachments/assets/36caca92-66a7-4232-950c-d727611613c5)
 ![image](https://github.com/user-attachments/assets/4ec3e1f4-f6b7-40c1-8bd3-76049eacad4b)
 
 
 ##### 로그인 (비밀번호 틀렸을 경우 포함)
+
 ![image](https://github.com/user-attachments/assets/fa8ddc71-5f07-4dd6-a60d-a99871548307)
 ![image](https://github.com/user-attachments/assets/12747515-572c-4dd3-b664-2858e9f9657f)
-
+<br>
 
 ## 사용자
 
 ### 사용자로 로그인시 보여지는 사용자 페이지
+
 ![image](https://github.com/user-attachments/assets/a1b7e234-a4da-4413-b17f-4ddb8760d202)
 
 
 ###### 구매 : 구매할 상품명을 Listbox에서 선택하고 수량을 정하여 버튼을 누르는 방식
+
 ![image](https://github.com/user-attachments/assets/93694a23-9977-4f38-a53e-8d17e0e64eb8)
 
 
 ###### 물품 구매
+
 ![image](https://github.com/user-attachments/assets/d8822677-a43e-4bf8-9faa-728f4a081ca8)
 
 
 ###### 회원정보수정 : 각 정보 중에서 바꾸고싶은 값만 바꾸는 방식 (바꾸지 않으면 해당 값은 기존 값 유지)
+
 ![image](https://github.com/user-attachments/assets/ebb594d7-1446-42d7-a22c-8e94262202aa)
 
 
 ###### 회원정보 변경
-![image](https://github.com/user-attachments/assets/0c0c2267-e0f1-4344-b2c8-981336230ff6)
 
+![image](https://github.com/user-attachments/assets/0c0c2267-e0f1-4344-b2c8-981336230ff6)
+<br>
 
 ## 관리자
 
 ##### 관리자계정을 만들기 위해 회원가입을 시도하여 그 중, 관리자 비밀번호를 입력
-##### (설정된 관리자 비번 : tjfgyqls)<hr>
+##### (설정된 관리자 비번 : tjfgyqls)
+<hr>
 ![image](https://github.com/user-attachments/assets/7fb4bb21-008e-459e-b0ab-98bb781b6792)
 
 
 ##### 방금 만든 관리자계정으로 로그인
+
 ![image](https://github.com/user-attachments/assets/e9df4002-65a1-478e-a92f-5e0e53ce2ab3)
 
 
-### 관리자 페이지로 로그인시 보여지는 관리자 페이지<hr>
+### 관리자 페이지로 로그인시 보여지는 관리자 페이지
+<hr>
 ![image](https://github.com/user-attachments/assets/a4e9c34c-aaaf-48eb-a001-52af9011e8a0)
 
 
 ###### 관리자는 마켓에 상품을 추가할 수 있다. Entry의 값을 버튼으로 날려보내서 처리하는 과정.
+
 ![image](https://github.com/user-attachments/assets/b28432f0-1494-4e8d-ae13-964ed4b938dd)
 
 ###### 상품추가
+
 ![image](https://github.com/user-attachments/assets/e6f24bd7-bbce-4d82-b8a0-414837c689d8)
 
 ###### 판매내역을 확인하여 누가 구매를 했고, 그 시간대를 확인.
-![image](https://github.com/user-attachments/assets/33c7b5a2-2252-425b-acd9-ac693cbdb811)
-
 ##### 방금 설효빈계정으로 물건을 산 기록 또한 기재
+
 ![image](https://github.com/user-attachments/assets/76204bf1-bc20-4da0-b1c2-62a9da023afd)
-
-
+<br>
 
 
 
