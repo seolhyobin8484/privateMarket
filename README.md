@@ -493,6 +493,7 @@ def update_user(new_id,new_pwd,new_loc,new_mail,new_phone,new_cellphone,new_sex)
     messagebox.showinfo("안내", "회원정보가 변경되었습니다.")
     close_db()
 ```
+<br>
 
 ## 개발 환경
 
