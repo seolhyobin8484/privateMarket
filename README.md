@@ -48,6 +48,7 @@
 ###### 회원정보 변경
 
 ![image](https://github.com/user-attachments/assets/0c0c2267-e0f1-4344-b2c8-981336230ff6)
+
 <br>
 
 ## 관리자
@@ -55,6 +56,7 @@
 ##### 관리자계정을 만들기 위해 회원가입을 시도하여 그 중, 관리자 비밀번호를 입력
 ##### (설정된 관리자 비번 : tjfgyqls)
 <hr>
+
 ![image](https://github.com/user-attachments/assets/7fb4bb21-008e-459e-b0ab-98bb781b6792)
 
 
