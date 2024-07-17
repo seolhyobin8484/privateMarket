@@ -65,6 +65,7 @@
 
 ### 관리자 페이지로 로그인시 보여지는 관리자 페이지
 <hr>
+
 ![image](https://github.com/user-attachments/assets/a4e9c34c-aaaf-48eb-a001-52af9011e8a0)
 
 
@@ -80,6 +81,7 @@
 ##### 방금 설효빈계정으로 물건을 산 기록 또한 기재
 
 ![image](https://github.com/user-attachments/assets/76204bf1-bc20-4da0-b1c2-62a9da023afd)
+
 <br>
 
 
